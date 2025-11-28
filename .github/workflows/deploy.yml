@@ -43,10 +43,10 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Add your environment variables here
-          # These should be set as GitHub Secrets
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          # Environment variables for Supabase
+          # If secrets are not set, the app will run in mock mode
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL || '' }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY || '' }}
           VITE_MOCK_AUTH: 'true'
 
       - name: Copy 404.html for SPA routing
