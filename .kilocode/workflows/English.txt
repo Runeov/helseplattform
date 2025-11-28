@@ -1,0 +1,81 @@
+## Voice and tone
+
+-Write like humans speak. Avoid corperate jargon and marketing fluff.
+-Be confident and direct. Avoid softening phrapses like "I think", "maybe" or "could"
+-Use active coice instead of passive voice. 
+ Use positive phrase-say what someting _is_ rather than what it _isn't_.
+ -Say you more than "we"When adressing external audiences. 
+ -Use contractions like "I'll," "won't'" and "can't" for a warmer tone.
+##  Specificity and evidence.
+-Be specific with facts and data instead of vague superlatives.
+-Back up claims with concrete examples or metrics.
+-Highlight customers and community members over company achievments.
+-Use realistic, product-based examples instead of "foo/bar/bas" in code.
+-Make content concrete,visual and falsifable.
+
+
+## Title creation
+
+-Make a promise in the title so readers know exactly what they will get if they click.
+-tap into controversial points your audience holds and back them up with data (Use wisely, avoid, clickbait).
+-Share something uniquely helpfull that makes readers better at meaningfull aspects of their lives.
+-avoid vagies titles like "my thoughts on ZYZ". Titles shold be opionions or sharable facts.
+-Write placeholder titles first, complete the content , then spend time iterationg on titles at the end. 
+
+## Banned Words
+
+-'a bit'  -> remove
+-'a little'  -> remove
+-"actuall/actually"  -> remove
+-"agile   -> remove
+-arguabily"  -> remove
+-"Assistance" -> "help"
+-"Attempt" ->"try"
+-"battle tested"  -> remove
+-"Buisness logic" -> remove
+
+
+## Avoid LLM patterns
+
+-Replace em dashes  with semicolons, commas or sentence breaks.
+-Avoid starting responses with "great question", "You're right" or "let me help you"
+-Don't use phrases like "let's dive into..."
+-skip cliche intros like "in  todays fast paced digital world" or in the ever evolving landscape of.
+-Avoid phrases like "itæs not just [x] its [y].".
+-Avoid self-referantial disclaimers "as an ai" or "i'm here to help you with."
+-Don't use high school essay closers:"in conclution, "overall" or "To summerize"
+-Avoid numbered lists in cases where bullets work better
+-Dont end with "Hope this helps" or similar closers.
+-Avoid overusing transition words like Futhermore, additionally or moreover.
+-Replace "in conclution" With direct statements.
+-Avoid hedge words like "might", "perhaps","potentially" unless uncertainty is real.
+-Delete empty citation placeholders like "[1]" with no actual source. 
+-Dont stack hedgeing phrases: "May potentially" "It's important to note that...."
+-Remove Unicode artifacts when copy-pasting smart quotes ("), em-dashes, non-breaking spaces.
+-Avoid title-case headings; prefer sentance casing.
+
+## Punctiation and formatting
+
+-Use Oxford commas consistently.
+-Use exclamation points sparingly
+-sentences can start with "But" and "And" but don't overuse
+- Use periods instead of commas when possible for clarity. 
+
+
+## Code Review
+
+-Think trought how the data flows in the app. Explain new patterns if they exist and why
+-Were there any changes that could affect infrastructure
+-Consider empty,loading,error and offline sates.
+-Review fonrend changes for ally (Keyboard navigation,focus managment,ARIA roles, color contrast.)
+-If public APIs have changed, ensure backwards compat (or increment API version)
+-Did we add any unneccessary dependencies? if thereæs a heaccy dependancy, could we inline a more minimal version? 
+-Did we add quality tests?  Prefer fewer, high quality yests. Prefer intergration tests for user flows.
+-Were there chema changes which could require a database migration? 
+-Changes to auth flows or permissions? run /security-review.
+-If feature flags are set up does this change require adding a new route ? 
+if il8n is set up, are the strings added localized and the new routes internationalized ? 
+-Are there places we shold use caching ? 
+Are we missing critical olly or logging on backend changes? 
+
+-

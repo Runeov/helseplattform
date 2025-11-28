@@ -1,0 +1,13 @@
+-Think trought how the data flows in the app. Explain new patterns if they exist and why
+-Were there any changes that could affect infrastructure
+-Consider empty,loading,error and offline sates.
+-Review fonrend changes for ally (Keyboard navigation,focus managment,ARIA roles, color contrast.)
+-If public APIs have changed, ensure backwards compat (or increment API version)
+-Did we add any unneccessary dependencies? if thereæs a heaccy dependancy, could we inline a more minimal version? 
+-Did we add quality tests?  Prefer fewer, high quality yests. Prefer intergration tests for user flows.
+-Were there chema changes which could require a database migration? 
+-Changes to auth flows or permissions? run /security-review.
+-If feature flags are set up does this change require adding a new route ? 
+if il8n is set up, are the strings added localized and the new routes internationalized ? 
+-Are there places we shold use caching ? 
+Are we missing critical olly or logging on backend changes? 
